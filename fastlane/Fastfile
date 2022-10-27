@@ -58,8 +58,6 @@ platform :ios do
     setup_app_variant(name: "Alpha")    
     # Builds an Ad Hoc IPA
     adhoc
-    # Upload to Diawi
-    upload_to_diawi
   end
 
   desc "Upload IPA to Diawi"
@@ -325,6 +323,15 @@ platform :ios do
     share_extension_provisioning_name = adhoc ? ENV["ADHOC_SHARE_EXTENSION_PROVISIONING_PROFILE_SPECIFIER"] : ENV["APPSTORE_SHARE_EXTENSION_PROVISIONING_PROFILE_SPECIFIER"]
     siri_intents_provisioning_name = adhoc ? ENV["ADHOC_SIRI_INTENTS_EXTENSION_PROVISIONING_PROFILE_SPECIFIER"] : ENV["APPSTORE_SIRI_INTENTS_EXTENSION_PROVISIONING_PROFILE_SPECIFIER"]
     notification_service_extension_provisioning_name = adhoc ? ENV["ADHOC_NSE_PROVISIONING_PROFILE_SPECIFIER"] : ENV["APPSTORE_NSE_PROVISIONING_PROFILE_SPECIFIER"]
+
+    # Authentification for App Store Connect
+    api_key = app_store_connect_api_key(
+      issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
+      key_id: ENV["APP_STORE_CONNECT_API_KEY_KEY_ID"],
+      key_filepath: "appstorekey.p12",
+      is_key_content_base64: true,
+      duration: 1200
+    )
 
     # Main application
     get_provisioning_profile(
