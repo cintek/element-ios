@@ -51,15 +51,14 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Use right MatrixSDK versions
         run: bundle exec fastlane point_dependencies_to_related_branches
-        
-	  # Import alpha release private signing certificate
-	  - name: Import signing certificate
-	    uses: apple-actions/import-codesign-certs@v1
-	    with:
-	      p12-file-base64: ${{ secrets.CERTIFICATE }}
-	      p12-password: ${{ secrets.CERTIFICATE_PASSWORD }}
-	      
-      # Main step
+
+      # Import alpha release private signing certificate
+      - name: Import signing certificate
+        uses: apple-actions/import-codesign-certs@v1
+        with:
+          p12-file-base64: ${{ secrets.CERTIFICATE }}
+          p12-password: ${{ secrets.CERTIFICATE_PASSWORD }}
+
       - name: Build iOS IPA (adhoc)
         env:
           APPLE_ID: ${{ secrets.FASTLANE_USER }}
