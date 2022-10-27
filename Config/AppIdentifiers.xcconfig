@@ -18,7 +18,7 @@
 // App identity
 BUNDLE_DISPLAY_NAME = Element
 BASE_BUNDLE_IDENTIFIER = de.intevation.fez
-APPLICATION_GROUP_IDENTIFIER = de.intevation.fez
+APPLICATION_GROUP_IDENTIFIER = group.de.intevation.fez
 APPLICATION_SCHEME = element
 
 // Team
