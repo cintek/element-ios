@@ -2404,7 +2404,7 @@
 "authentication_server_selection_login_title" = "Matrix szerverhez csatlakozás";
 "authentication_server_info_title" = "Itt lesznek tárolva a beszélgetéseid";
 "authentication_login_forgot_password" = "Elfelejtetted a jelszót?";
-"authentication_login_username" = "Felhasználónév / E-mail / Telefonszám";
+"authentication_login_username" = "Felhasználónév / E-mail";
 "authentication_login_title" = "Üdv újra!";
 "authentication_registration_password_footer" = "8 vagy több karakternek kell lennie";
 /* The placeholder will show the full Matrix ID that has been entered. */

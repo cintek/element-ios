@@ -2571,7 +2571,7 @@
 "authentication_server_selection_login_title" = "Verbinding maken met server";
 "authentication_server_info_title" = "Waar uw gesprekken zullen leven";
 "authentication_login_forgot_password" = "Wachtwoord vergeten";
-"authentication_login_username" = "Inlognaam / E-mailadres / Telefoon";
+"authentication_login_username" = "Inlognaam / E-mailadres";
 "authentication_login_title" = "Welkom terug!";
 "authentication_registration_password_footer" = "Moet 8 tekens of meer zijn";
 /* The placeholder will show the full Matrix ID that has been entered. */

@@ -153,7 +153,7 @@
 "authentication_server_info_title" = "Where your conversations will live";
 
 "authentication_login_title" = "Welcome back!";
-"authentication_login_username" = "Username / Email / Phone";
+"authentication_login_username" = "Username / Email";
 "authentication_login_forgot_password" = "Forgot password";
 "authentication_server_info_title_login" = "Where your conversations live";
 "authentication_login_with_qr" = "Sign in with QR code";

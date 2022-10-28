@@ -2609,7 +2609,7 @@
 "authentication_server_selection_login_title" = "Під'єднатися до домашнього сервера";
 "authentication_server_info_title" = "Де відбуватимуться ваші розмови";
 "authentication_login_forgot_password" = "Не пам'ятаю пароль";
-"authentication_login_username" = "Ім'я користувача / Е-пошта / Телефон";
+"authentication_login_username" = "Ім'я користувача / Е-пошта";
 "authentication_login_title" = "З поверненням!";
 "authentication_registration_password_footer" = "Має складатися з 8 або більше символів";
 /* The placeholder will show the full Matrix ID that has been entered. */

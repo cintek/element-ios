@@ -2174,7 +2174,7 @@
 "authentication_verify_email_input_title" = "Settu inn tölvupóstfangið þitt";
 "authentication_server_selection_server_url" = "Slóð á heimaþjón";
 "authentication_login_forgot_password" = "Gleymt lykilorð";
-"authentication_login_username" = "Notandanafn / tölvupóstfang / símanúmer";
+"authentication_login_username" = "Notandanafn / tölvupóstfang";
 "authentication_login_title" = "Velkomin(n) aftur!";
 "authentication_registration_username" = "Notandanafn";
 "threads_beta_information" = "Haltu samræðum skipulögðum með spjallþráðum.\n\nSpjallþræðir hjálpa til við að halda samræðum við efnið og gerir auðveldara að rekja þær. ";

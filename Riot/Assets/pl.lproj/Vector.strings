@@ -2453,7 +2453,7 @@
 "authentication_server_selection_login_title" = "Połącz się z serwerem domowym";
 "authentication_server_info_title" = "Twoje rozmowy będą przechowywane tutaj";
 "authentication_login_forgot_password" = "Zapomniałem/am hasła";
-"authentication_login_username" = "Nazwa użytkownika / e-mail / telefon";
+"authentication_login_username" = "Nazwa użytkownika / e-mail";
 "authentication_login_title" = "Witamy!";
 "authentication_registration_password_footer" = "Musi mieć co najmniej 8 znaków";
 /* The placeholder will show the full Matrix ID that has been entered. */

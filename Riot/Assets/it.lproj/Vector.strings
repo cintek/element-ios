@@ -2384,7 +2384,7 @@
 "authentication_server_selection_login_title" = "Connetti all'homeserver";
 "authentication_server_info_title" = "Dove vivranno le tue conversazioni";
 "authentication_login_forgot_password" = "Password dimenticata";
-"authentication_login_username" = "Nome utente / Email / Telefono";
+"authentication_login_username" = "Nome utente / Email";
 "authentication_login_title" = "Bentornato/a!";
 "authentication_registration_password_footer" = "Deve essere di almeno 8 caratteri";
 /* The placeholder will show the full Matrix ID that has been entered. */

@@ -1987,7 +1987,7 @@
 "authentication_verify_email_text_field_placeholder" = "Электронная почта";
 "authentication_verify_email_input_title" = "Введите электронную почту";
 "authentication_login_forgot_password" = "Забыл(а) пароль";
-"authentication_login_username" = "Имя пользователя / электронная почта / телефон";
+"authentication_login_username" = "Имя пользователя / электронная почта";
 "authentication_login_title" = "С возвращением!";
 "authentication_registration_password_footer" = "Не менее 8 символов";
 "authentication_registration_username_footer" = "Вы не сможете изменить это позже";

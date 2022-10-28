@@ -2607,7 +2607,7 @@
 "authentication_server_selection_login_title" = "Pripojenie k domovskému serveru";
 "authentication_server_info_title" = "Kde budú vaše konverzácie prebiehať";
 "authentication_login_forgot_password" = "Zabudnuté heslo";
-"authentication_login_username" = "Meno používateľa / E-mail / Telefón";
+"authentication_login_username" = "Meno používateľa / E-mail";
 "authentication_login_title" = "Vitajte späť!";
 "authentication_registration_password_footer" = "Musí obsahovať 8 alebo viac znakov";
 /* The placeholder will show the full Matrix ID that has been entered. */

@@ -2611,7 +2611,7 @@
 "authentication_server_selection_login_title" = "Hubungkan ke homeserver";
 "authentication_server_info_title" = "Di mana pecakapan Anda tinggal";
 "authentication_login_forgot_password" = "Lupa kata sandi";
-"authentication_login_username" = "Nama Pengguna / Email / Telepon";
+"authentication_login_username" = "Nama Pengguna / Email";
 "authentication_login_title" = "Selamat datang kembali!";
 "authentication_registration_password_footer" = "Harus 8 karakter atau lebih";
 /* The placeholder will show the full Matrix ID that has been entered. */

@@ -2472,7 +2472,7 @@
 "authentication_server_selection_login_title" = "Conectar al servidor base";
 "authentication_server_info_title_login" = "Dónde se guardarán tus conversaciones";
 "authentication_login_forgot_password" = "Olvidé mi contraseña";
-"authentication_login_username" = "Usuario / Email / Teléfono";
+"authentication_login_username" = "Usuario / Email";
 "authentication_login_title" = "¡Bienvenido!";
 "authentication_server_info_title" = "Dónde se guardarán tus conversaciones";
 "authentication_registration_password_footer" = "Debe tener al menos 8 caracteres";

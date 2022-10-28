@@ -2277,7 +2277,7 @@
 "authentication_server_selection_login_message" = "Quelle est l’adresse de votre serveur ?";
 "authentication_server_info_title_login" = "Où seront vos conversations";
 "authentication_login_forgot_password" = "Mot de passe oublié";
-"authentication_login_username" = "Nom d’utilisateur / Email / Numéro de téléphone";
+"authentication_login_username" = "Nom d’utilisateur / Email";
 "authentication_login_title" = "Contents de vous retrouver !";
 "authentication_server_info_title" = "Où seront vous conversations";
 /* The placeholder will show the full Matrix ID that has been entered. */

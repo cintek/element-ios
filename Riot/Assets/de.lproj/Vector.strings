@@ -2229,7 +2229,7 @@
 "onboarding_celebration_button" = "Los geht's";
 "onboarding_avatar_accessibility_label" = "Profilbild";
 "authentication_login_forgot_password" = "Passwort vergessen";
-"authentication_login_username" = "Nutzername / E-Mail-Adresse / Telefonnummer";
+"authentication_login_username" = "Nutzername / E-Mail-Adresse";
 "authentication_login_title" = "Willkommen zurück!";
 "authentication_server_selection_login_title" = "Mit Homeserver verbinden";
 "location_sharing_invalid_power_level_message" = "Du benötigst die entsprechenden Berechtigungen, um deinen Echtzeit-Standort in diesem Raum freizugeben.";

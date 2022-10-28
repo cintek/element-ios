@@ -2307,7 +2307,7 @@
 "authentication_server_selection_login_message" = "Mis on sinu koduserveri aadress?";
 "authentication_server_selection_login_title" = "Alusta koduserveri kasutamist";
 "authentication_login_forgot_password" = "Kas unustasid oma salasõna";
-"authentication_login_username" = "Kasutajanimi / E-post / Telefon";
+"authentication_login_username" = "Kasutajanimi / E-post";
 "authentication_login_title" = "Tere tulemast tagasi!";
 "authentication_registration_password_footer" = "Peab olema 8 või enam tähemärki";
 /* The placeholder will show the full Matrix ID that has been entered. */

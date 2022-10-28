@@ -2319,7 +2319,7 @@
 "settings_timeline" = "TIMELINE";
 "room_accessibility_record_voice_message_hint" = "Toque duplo e segure para gravar.";
 "room_accessibility_record_voice_message" = "Gravar Mensagem de Voz";
-"authentication_login_username" = "Nome de Usuária(o) / Email / Telefone";
+"authentication_login_username" = "Nome de Usuária(o) / Email";
 "message_reply_to_sender_sent_their_live_location" = "Localização ao vivo.";
 "location_sharing_live_lab_promotion_activation" = "Habilitar compartilhamento de localização ao vivo";
 "location_sharing_live_lab_promotion_text" = "Por favor note: esta é uma funcionalidade de labs usando uma implementação temporária que permite o histórico de sua localização compartilhada ser permanentemente visível a outras pessoas na sala.";
