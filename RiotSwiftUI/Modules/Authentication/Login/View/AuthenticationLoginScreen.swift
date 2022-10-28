@@ -38,10 +38,6 @@ struct AuthenticationLoginScreen: View {
                     .padding(.top, OnboardingMetrics.topPaddingToNavigationBar)
                     .padding(.bottom, 28)
                 
-                serverInfo
-                    .padding(.leading, 12)
-                    .padding(.bottom, 16)
-                
                 Rectangle()
                     .fill(theme.colors.quinaryContent)
                     .frame(height: 1)
@@ -85,14 +81,6 @@ struct AuthenticationLoginScreen: View {
             .font(theme.fonts.title2B)
             .multilineTextAlignment(.center)
             .foregroundColor(theme.colors.primaryContent)
-    }
-    
-    /// The sever information section that includes a button to select a different server.
-    var serverInfo: some View {
-        AuthenticationServerInfoSection(address: viewModel.viewState.homeserver.address,
-                                        flow: .login) {
-            viewModel.send(viewAction: .selectServer)
-        }
     }
     
     /// The form with text fields for username and password, along with a submit button.
