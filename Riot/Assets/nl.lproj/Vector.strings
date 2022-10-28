@@ -1375,7 +1375,7 @@
 "settings_security" = "BEVEILIGING";
 "settings_three_pids_management_information_part3" = ".";
 "settings_three_pids_management_information_part2" = "Ontdekken";
-"settings_three_pids_management_information_part1" = "Beheer hier de e-mailadressen en telefoonnummers die u kunt gebruiken om zich aan te melden, of om uw account te herstellen. Controleer wie u vinden kan in ";
+"settings_three_pids_management_information_part1" = "Beheer hier de e-mailadressen die u kunt gebruiken om zich aan te melden, of om uw account te herstellen. Controleer wie u vinden kan in ";
 "settings_integrations" = "INTEGRATIES";
 "settings_identity_server_settings" = "IDENTITEITSSERVER";
 "settings_discovery_settings" = "ONTDEKKEN";

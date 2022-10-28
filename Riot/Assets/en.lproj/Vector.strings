@@ -717,7 +717,7 @@ Tap the + to start adding people.";
 "settings_change_password" = "Change password";
 "settings_night_mode" = "Night Mode";
 "settings_fail_to_update_profile" = "Fail to update profile";
-"settings_three_pids_management_information_part1" = "Manage which email addresses or phone numbers you can use to log in or recover your account here. Control who can find you in ";
+"settings_three_pids_management_information_part1" = "Manage which email addresses you can use to log in or recover your account here. Control who can find you in ";
 "settings_three_pids_management_information_part2" = "Discovery";
 "settings_three_pids_management_information_part3" = ".";
 

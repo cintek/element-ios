@@ -841,7 +841,7 @@
 "contacts_address_book_no_identity_server" = "Не е настроен сървър за самоличност";
 "settings_discovery_settings" = "ОТКРИВАНЕ";
 "settings_identity_server_settings" = "СЪРВЪР ЗА САМОЛИЧНОСТ";
-"settings_three_pids_management_information_part1" = "Управлявайте имейл адресите и телефонните номера, които използвате за вход или за възстановяване на профила. Контролирайте, кой може да ви намери в ";
+"settings_three_pids_management_information_part1" = "Управлявайте имейл адресите, които използвате за вход или за възстановяване на профила. Контролирайте, кой може да ви намери в ";
 "settings_three_pids_management_information_part2" = "Откриване";
 "settings_three_pids_management_information_part3" = ".";
 "settings_calls_stun_server_fallback_button" = "Позволи използването на резервен сървър за свързване на обаждания";

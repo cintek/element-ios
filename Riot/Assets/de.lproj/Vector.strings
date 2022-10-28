@@ -822,7 +822,7 @@
 "media_type_accessibility_file" = "Datei";
 "media_type_accessibility_sticker" = "Aufkleber";
 "settings_identity_server_settings" = "IDENTITÄTSERVER";
-"settings_three_pids_management_information_part1" = "Verwalte hier, mit welchen E-Mail-Adressen oder Telefonnummern du dich anmeldest, oder dein Konto wiederherstellen kannst. Kontrolliere, wer dich finden kann ";
+"settings_three_pids_management_information_part1" = "Verwalte hier, mit welchen E-Mail-Adressen du dich anmeldest, oder dein Konto wiederherstellen kannst. Kontrolliere, wer dich finden kann ";
 "settings_three_pids_management_information_part3" = ".";
 "settings_calls_stun_server_fallback_button" = "Ausweich-Anruf-Assistenz-Server zulassen";
 "settings_devices_description" = "Der öffentliche Name der Sitzung ist für Personen sichtbar, mit denen du kommunizierst";
