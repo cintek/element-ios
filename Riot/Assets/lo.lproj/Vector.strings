@@ -713,7 +713,6 @@
 "settings_fail_to_update_profile" = "ອັບເດດໂປຣໄຟລ໌ບໍ່ສຳເລັດ";
 "settings_night_mode" = "ໂໝດກາງຄືນ";
 "settings_change_password" = "ປ່ຽນລະຫັດຜ່ານບັນຊີ Matrix";
-"settings_add_phone_number" = "ເພີ່ມເບີໂທລະສັບ";
 "settings_phone_number" = "ໂທລະສັບ";
 "settings_add_email_address" = "ເພີ່ມທີ່ຢູ່ອີເມວ";
 "settings_email_address_placeholder" = "ກະລຸນາໃສ່ທີ່ຢູ່ອີເມວຂອງທ່ານ";

@@ -279,7 +279,6 @@
 "settings_email_address_placeholder" = "あなたのメールアドレスを入力してください";
 "settings_add_email_address" = "メールアドレスを追加";
 "settings_phone_number" = "電話番号";
-"settings_add_phone_number" = "電話番号を追加";
 "settings_night_mode" = "夜間おやすみモード";
 "settings_fail_to_update_profile" = "自己紹介設定の更新に失敗しました";
 "settings_enable_push_notif" = "この端末での通知";

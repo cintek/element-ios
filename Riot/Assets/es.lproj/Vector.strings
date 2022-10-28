@@ -312,7 +312,6 @@
 "settings_email_address_placeholder" = "Escribe tu dirección de correo electrónico";
 "settings_add_email_address" = "Añadir dirección de correo electrónico";
 "settings_phone_number" = "Teléfono";
-"settings_add_phone_number" = "Añadir número de teléfono";
 "settings_night_mode" = "Modo Nocturno";
 "settings_fail_to_update_profile" = "Error al actualizar el perfil";
 "settings_enable_push_notif" = "Notificaciones en este dispositivo";

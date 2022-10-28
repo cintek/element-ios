@@ -714,7 +714,6 @@ Tap the + to start adding people.";
 "settings_email_address_placeholder" = "Enter your email address";
 "settings_add_email_address" = "Add email address";
 "settings_phone_number" = "Phone";
-"settings_add_phone_number" = "Add phone number";
 "settings_change_password" = "Change password";
 "settings_night_mode" = "Night Mode";
 "settings_fail_to_update_profile" = "Fail to update profile";

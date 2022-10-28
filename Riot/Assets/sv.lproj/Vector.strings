@@ -293,7 +293,6 @@
 "settings_email_address_placeholder" = "Ange din e-postadress";
 "settings_add_email_address" = "Lägg till e-postadress";
 "settings_phone_number" = "Telefon";
-"settings_add_phone_number" = "Lägg till telefonnummer";
 "settings_change_password" = "Byt lösenord";
 "settings_night_mode" = "Nattläge";
 "settings_fail_to_update_profile" = "Misslyckades att uppdatera profil";

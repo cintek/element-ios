@@ -311,7 +311,6 @@
 "settings_labs" = "LABORE";
 "settings_sign_out_e2e_warn" = "Du wirst die Ende-zu-Ende Schlüssel verlieren. Du kannst dann auf diesem Gerät in verschlüsselten Räumen keine alten Nachrichten mehr lesen.";
 "settings_phone_number" = "Telefon";
-"settings_add_phone_number" = "Telefonnummer hinzufügen";
 "settings_fail_to_update_profile" = "Profilaktualisierung fehlgeschlagen";
 "settings_global_settings_info" = "Globale Benachrichtigungseinstellungen sind in deiner %@ Web-Anwendung verfügbar";
 "settings_pin_rooms_with_missed_notif" = "Pinnen von Räumen mit verpassten Benachrichtigungen";

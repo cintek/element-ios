@@ -303,7 +303,6 @@
 "settings_email_address_placeholder" = "Add meg az e-mail címet";
 "settings_add_email_address" = "E-mail cím hozzáadása";
 "settings_phone_number" = "Telefon";
-"settings_add_phone_number" = "Telefonszám hozzáadása";
 "settings_night_mode" = "Éjszakai üzemmód";
 "settings_fail_to_update_profile" = "A felhasználói profilt nem sikerült frissíteni";
 "settings_enable_push_notif" = "Értesítések ezen az eszközön";

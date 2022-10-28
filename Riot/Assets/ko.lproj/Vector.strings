@@ -339,7 +339,6 @@
 "settings_email_address_placeholder" = "이메일 주소를 입력하세요";
 "settings_add_email_address" = "이메일 주소 추가";
 "settings_phone_number" = "휴대 전화";
-"settings_add_phone_number" = "전화번호 추가";
 "settings_change_password" = "Matrix 계정 비밀번호 변경";
 "settings_night_mode" = "야간 모드";
 "settings_fail_to_update_profile" = "프로필 업데이트에 실패함";

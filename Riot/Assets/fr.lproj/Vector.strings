@@ -271,7 +271,6 @@
 "settings_email_address_placeholder" = "Saisir votre adresse e-mail";
 "settings_add_email_address" = "Ajouter une adresse e-mail";
 "settings_phone_number" = "Téléphone";
-"settings_add_phone_number" = "Ajouter un numéro de téléphone";
 "settings_night_mode" = "Mode nuit";
 "settings_fail_to_update_profile" = "Échec de la mise à jour du profil";
 "settings_enable_push_notif" = "Notifications sur cet appareil";

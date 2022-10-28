@@ -232,7 +232,6 @@
 "settings_fail_to_update_profile" = "Не вдалося оновити профіль";
 "settings_night_mode" = "Нічний режим";
 "settings_change_password" = "Змінити пароль";
-"settings_add_phone_number" = "Додати номер телефону";
 "settings_phone_number" = "Телефон";
 "settings_add_email_address" = "Додати адресу е-пошти";
 "settings_email_address_placeholder" = "Введіть вашу адресу електронної пошти";

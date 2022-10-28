@@ -7095,10 +7095,6 @@ public class VectorL10n: NSObject {
   public static var settingsAddEmailAddress: String { 
     return VectorL10n.tr("Vector", "settings_add_email_address") 
   }
-  /// Add phone number
-  public static var settingsAddPhoneNumber: String { 
-    return VectorL10n.tr("Vector", "settings_add_phone_number") 
-  }
   /// ADVANCED
   public static var settingsAdvanced: String { 
     return VectorL10n.tr("Vector", "settings_advanced") 

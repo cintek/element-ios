@@ -980,7 +980,6 @@
 "settings_change_password" = "Ŝanĝi pasvorton";
 "settings_remove_phone_prompt_msg" = "Ĉu vi certe volas forigi la telefonnumeron %@?";
 "settings_phone_number" = "Telefonnumero";
-"settings_add_phone_number" = "Aldoni telefonnumeron";
 "settings_add_email_address" = "Aldoni retpoŝtadreson";
 "settings_email_address" = "Retpoŝto";
 "settings_remove_email_prompt_msg" = "Ĉu vi certe volas forigi la retpoŝtadreson %@?";

@@ -286,7 +286,6 @@
 "settings_email_address_placeholder" = "Escriu el teu correu electrònic";
 "settings_add_email_address" = "Afegir adreça de correu";
 "settings_phone_number" = "Telèfon";
-"settings_add_phone_number" = "Afegir número de telèfon";
 "settings_night_mode" = "Mode nocturn";
 "settings_fail_to_update_profile" = "No es pot actualitzar el perfil";
 "settings_enable_push_notif" = "Notificacions en aquest dispositiu";

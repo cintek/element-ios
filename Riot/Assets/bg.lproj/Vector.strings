@@ -290,7 +290,6 @@
 "settings_email_address_placeholder" = "Въведете своя имейл адрес";
 "settings_add_email_address" = "Добави имейл адрес";
 "settings_phone_number" = "Телефон";
-"settings_add_phone_number" = "Добави телефонен номер";
 "settings_night_mode" = "Нощен режим";
 "settings_fail_to_update_profile" = "Неуспешно обновяване на профила";
 "settings_enable_push_notif" = "Известия на това устройство";

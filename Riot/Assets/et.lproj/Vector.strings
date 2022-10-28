@@ -486,7 +486,6 @@
 "settings_email_address_placeholder" = "Sisesta oma e-posti aadress";
 "settings_add_email_address" = "Lisa e-posti aadress";
 "settings_phone_number" = "Telefon";
-"settings_add_phone_number" = "Lisa telefoninumber";
 "settings_change_password" = "Muuda salasõna";
 "settings_fail_to_update_profile" = "Profiili uuendamine ei õnnestunud";
 "settings_global_settings_info" = "Üldised teavituste seadistused leiduvad sinu %@ veebikliendis";

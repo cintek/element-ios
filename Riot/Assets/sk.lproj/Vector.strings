@@ -966,7 +966,6 @@
 "settings_encrypted_direct_messages" = "Šifrované priame správy";
 "settings_mentions_and_keywords" = "Zmienky a kľúčové slová";
 "settings_show_decrypted_content" = "Zobraziť dešifrovaný obsah";
-"settings_add_phone_number" = "Pridať telefónne číslo";
 "settings_add_email_address" = "Pridať emailovú adresu";
 "settings_sign_out_confirmation" = "Ste si istí?";
 "settings_config_home_server" = "Domovský server je %@";

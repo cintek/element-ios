@@ -481,7 +481,6 @@
 "settings_fail_to_update_profile" = "Problém s nahráním profilu Fail";
 "settings_night_mode" = "Temný režim";
 "settings_change_password" = "Změňte heslo Matrix account";
-"settings_add_phone_number" = "Přidat telefonní číslo";
 "settings_phone_number" = "Telefon";
 "settings_add_email_address" = "Přidat emailovou adresu";
 "settings_email_address_placeholder" = "Zadejte emailovou adresu";

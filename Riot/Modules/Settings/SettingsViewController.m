@@ -77,7 +77,6 @@ typedef NS_ENUM(NSUInteger, USER_SETTINGS_INDEX)
     USER_SETTINGS_FIRST_NAME_INDEX,
     USER_SETTINGS_SURNAME_INDEX,
     USER_SETTINGS_ADD_EMAIL_INDEX,
-    USER_SETTINGS_ADD_PHONENUMBER_INDEX
 };
 
 typedef NS_ENUM(NSUInteger, USER_SETTINGS_OFFSET)
@@ -368,10 +367,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
     if (BuildSettings.settingsScreenAllowAddingEmailThreepids)
     {
         [sectionUserSettings addRowWithTag:USER_SETTINGS_ADD_EMAIL_INDEX];
-    }
-    if (BuildSettings.settingsScreenAllowAddingPhoneThreepids)
-    {
-        [sectionUserSettings addRowWithTag:USER_SETTINGS_ADD_PHONENUMBER_INDEX];
     }
     if (BuildSettings.settingsScreenShowThreepidExplanatory)
     {
@@ -952,37 +947,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
             }
             
             [self.tableView endUpdates];            
-        });
-    }
-}
-
--(void)setNewPhoneEditingEnabled:(BOOL)newPhoneEditingEnabled
-{
-    if (newPhoneEditingEnabled != _newPhoneEditingEnabled)
-    {
-        // Update the flag
-        _newPhoneEditingEnabled = newPhoneEditingEnabled;
-        
-        if (!newPhoneEditingEnabled)
-        {
-            // Dismiss the keyboard
-            [newPhoneNumberCell.mxkTextField resignFirstResponder];
-            newPhoneNumberCell = nil;
-        }
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            [self.tableView beginUpdates];
-            
-            // Refresh the corresponding table view cell with animation
-            NSIndexPath *addPhoneIndexPath = [self.tableViewSections exactIndexPathForRowTag:USER_SETTINGS_ADD_PHONENUMBER_INDEX
-                                                                                  sectionTag:SECTION_TAG_USER_SETTINGS];
-            if (addPhoneIndexPath)
-            {
-                [self.tableView reloadRowsAtIndexPaths:@[addPhoneIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            }
-            
-            [self.tableView endUpdates];
         });
     }
 }
@@ -1891,84 +1855,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
             newEmailCell.mxkTextField.tag = row;
 
             cell = newEmailCell;
-        }
-        else if (row == USER_SETTINGS_ADD_PHONENUMBER_INDEX)
-        {
-            // Render the cell according to the `newPhoneEditingEnabled` property
-            if (!_newPhoneEditingEnabled)
-            {
-                MXKTableViewCellWithLabelAndTextField *newPhoneCell = [self getLabelAndTextFieldCell:tableView forIndexPath:indexPath];
-                
-                newPhoneCell.mxkLabel.text = [VectorL10n settingsAddPhoneNumber];
-                newPhoneCell.mxkTextField.text = nil;
-                newPhoneCell.mxkTextField.userInteractionEnabled = NO;
-                newPhoneCell.accessoryView = [[UIImageView alloc] initWithImage:[AssetImages.plusIcon.image vc_tintedImageUsingColor:ThemeService.shared.theme.textPrimaryColor]];
-                
-                cell = newPhoneCell;
-            }
-            else
-            {
-                TableViewCellWithPhoneNumberTextField * newPhoneCell = [self.tableView dequeueReusableCellWithIdentifier:[TableViewCellWithPhoneNumberTextField defaultReuseIdentifier] forIndexPath:indexPath];
-                
-                [newPhoneCell.countryCodeButton removeTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
-                [newPhoneCell.countryCodeButton addTarget:self action:@selector(selectPhoneNumberCountry:) forControlEvents:UIControlEventTouchUpInside];
-                newPhoneCell.countryCodeButton.accessibilityIdentifier = @"SettingsVCPhoneCountryButton";
-                
-                newPhoneCell.mxkLabel.font = newPhoneCell.mxkTextField.font = [UIFont systemFontOfSize:16];
-                
-                newPhoneCell.mxkTextField.userInteractionEnabled = YES;
-                newPhoneCell.mxkTextField.keyboardType = UIKeyboardTypePhonePad;
-                newPhoneCell.mxkTextField.autocorrectionType = UITextAutocorrectionTypeNo;
-                newPhoneCell.mxkTextField.spellCheckingType = UITextSpellCheckingTypeNo;
-                newPhoneCell.mxkTextField.delegate = self;
-                newPhoneCell.mxkTextField.accessibilityIdentifier=@"SettingsVCAddPhoneTextField";
-                
-                [newPhoneCell.mxkTextField removeTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
-                [newPhoneCell.mxkTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
-                
-                [newPhoneCell.mxkTextField removeTarget:self action:@selector(textFieldDidEnd:) forControlEvents:UIControlEventEditingDidEnd];
-                [newPhoneCell.mxkTextField addTarget:self action:@selector(textFieldDidEnd:) forControlEvents:UIControlEventEditingDidEnd];
-                
-                newPhoneCell.mxkTextField.tag = row;
-                
-                // When displaying the textfield the 1st time, open the keyboard
-                if (!newPhoneNumberCell)
-                {
-                    NSString *countryCode = [MXKAppSettings standardAppSettings].phonebookCountryCode;
-                    if (!countryCode)
-                    {
-                        // If none, consider the preferred locale
-                        NSLocale *local = [[NSLocale alloc] initWithLocaleIdentifier:[[NSBundle mainBundle] preferredLocalizations][0]];
-                        if ([local respondsToSelector:@selector(countryCode)])
-                        {
-                            countryCode = local.countryCode;
-                        }
-                        
-                        if (!countryCode)
-                        {
-                            countryCode = @"GB";
-                        }
-                    }
-                    newPhoneCell.isoCountryCode = countryCode;
-                    newPhoneCell.mxkTextField.text = nil;
-                    
-                    newPhoneNumberCell = newPhoneCell;
-
-                    [self editNewPhoneNumberTextField];
-                }
-                else
-                {
-                    newPhoneCell.isoCountryCode = newPhoneNumberCell.isoCountryCode;
-                    newPhoneCell.mxkTextField.text = newPhoneNumberCell.mxkTextField.text;
-                    
-                    newPhoneNumberCell = newPhoneCell;
-                }
-                
-                UIImage *accessoryViewImage = [AssetImages.plusIcon.image vc_tintedImageUsingColor:ThemeService.shared.theme.tintColor];
-                newPhoneCell.accessoryView = [[UIImageView alloc] initWithImage:accessoryViewImage];
-                
-                cell = newPhoneCell;
-            }
         }
         else if (row == USER_SETTINGS_CHANGE_PASSWORD_INDEX)
         {
@@ -2919,18 +2805,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
                 else if (newEmailTextField)
                 {
                     [self onAddNewEmail:newEmailTextField];
-                }
-            }
-            else if (row == USER_SETTINGS_ADD_PHONENUMBER_INDEX)
-            {
-                if (!self.newPhoneEditingEnabled)
-                {
-                    // Enable the new phone text field
-                    self.newPhoneEditingEnabled = YES;
-                }
-                else if (newPhoneNumberCell.mxkTextField)
-                {
-                    [self onAddNewPhone:newPhoneNumberCell.mxkTextField];
                 }
             }
         }
@@ -4064,12 +3938,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
         newDisplayName = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         [self updateSaveButtonStatus];
     }
-    else if (textField.tag == USER_SETTINGS_ADD_PHONENUMBER_INDEX)
-    {
-        newPhoneNumber = [[NBPhoneNumberUtil sharedInstance] parse:textField.text defaultRegion:newPhoneNumberCell.isoCountryCode error:nil];
-        
-        [self formatNewPhoneNumber];
-    }
 }
 
 - (IBAction)textFieldDidEnd:(id)sender
@@ -4080,11 +3948,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
     if (textField.tag == USER_SETTINGS_ADD_EMAIL_INDEX && textField.text.length == 0 && !keepNewEmailEditing)
     {
         self.newEmailEditingEnabled = NO;
-    }
-    else if (textField.tag == USER_SETTINGS_ADD_PHONENUMBER_INDEX && textField.text.length == 0 && !keepNewPhoneNumberEditing && !newPhoneNumberCountryPicker)
-    {
-        // Disable the new phone edition if the user leaves the text field empty
-        self.newPhoneEditingEnabled = NO;
     }
 }
 

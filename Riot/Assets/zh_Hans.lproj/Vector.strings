@@ -263,7 +263,6 @@
 "settings_email_address_placeholder" = "输入您的邮箱地址";
 "settings_add_email_address" = "添加邮箱地址";
 "settings_phone_number" = "手机号码";
-"settings_add_phone_number" = "添加手机号码";
 "settings_night_mode" = "夜间模式";
 "settings_fail_to_update_profile" = "个人档案更新失败";
 "settings_enable_push_notif" = "在此设备上发送通知";

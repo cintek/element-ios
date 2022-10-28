@@ -460,7 +460,6 @@
 "settings_other" = "ANNET";
 "settings_cryptography" = "KRYPTOGRAFI";
 "settings_add_email_address" = "Legg til E-postadresse";
-"settings_add_phone_number" = "Legg til telefonnummer";
 "settings_three_pids_management_information_part2" = "Oppdag";
 "settings_ui_theme_picker_title" = "Velg et tema";
 "settings_labs_e2e_encryption" = "Punkt-til-punkt-kryptering";

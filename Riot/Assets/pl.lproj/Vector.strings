@@ -403,7 +403,6 @@
 "settings_email_address_placeholder" = "Wprowadź adres e-mail";
 "settings_add_email_address" = "Dodaj adres e-mail";
 "settings_phone_number" = "Telefon";
-"settings_add_phone_number" = "Dodaj numer telefonu";
 "settings_night_mode" = "Tryb Nocny";
 "settings_fail_to_update_profile" = "Nie udało się zaktualizować profilu";
 "settings_show_decrypted_content" = "Pokaż odszyfrowaną zawartość";

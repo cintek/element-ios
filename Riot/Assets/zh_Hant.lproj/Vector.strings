@@ -130,7 +130,6 @@
 "settings_email_address" = "電子郵件";
 "settings_add_email_address" = "新增電子郵件地址";
 "settings_phone_number" = "電話";
-"settings_add_phone_number" = "新增電話號碼";
 "room_details_topic" = "主題";
 "room_details_low_priority_tag" = "低優先度";
 "room_details_access_section" = "誰可以存取此聊天室？";
