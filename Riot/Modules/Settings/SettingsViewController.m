@@ -359,11 +359,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
     {
         [sectionUserSettings addRowWithTag: USER_SETTINGS_EMAILS_OFFSET + index];
     }
-    //  add linked phone numbers
-    for (NSInteger index = 0; index < account.linkedPhoneNumbers.count; index++)
-    {
-        [sectionUserSettings addRowWithTag: USER_SETTINGS_PHONENUMBERS_OFFSET + index];
-    }
     if (BuildSettings.settingsScreenAllowAddingEmailThreepids)
     {
         [sectionUserSettings addRowWithTag:USER_SETTINGS_ADD_EMAIL_INDEX];
@@ -1791,18 +1786,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
             
             cell = emailCell;
         }
-        else if (row >= USER_SETTINGS_PHONENUMBERS_OFFSET)
-        {
-            NSInteger phoneNumberIndex = row - USER_SETTINGS_PHONENUMBERS_OFFSET;
-            MXKTableViewCellWithLabelAndTextField *phoneCell = [self getLabelAndTextFieldCell:tableView forIndexPath:indexPath];
-            
-            phoneCell.mxkLabel.text = [VectorL10n settingsPhoneNumber];
-            
-            phoneCell.mxkTextField.text = [MXKTools readableMSISDN:account.linkedPhoneNumbers[phoneNumberIndex]];
-            phoneCell.mxkTextField.userInteractionEnabled = NO;
-            
-            cell = phoneCell;
-        }
         else if (row == USER_SETTINGS_ADD_EMAIL_INDEX)
         {
             MXKTableViewCellWithLabelAndTextField *newEmailCell = [self getLabelAndTextFieldCell:tableView forIndexPath:indexPath];
@@ -2891,21 +2874,6 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
             {
                 address = linkedEmails[row];
                 promptMsg = [VectorL10n settingsRemoveEmailPromptMsg:address];
-            }
-        }
-        else if (row >= USER_SETTINGS_PHONENUMBERS_OFFSET)
-        {
-            medium = kMX3PIDMediumMSISDN;
-            row = row - USER_SETTINGS_PHONENUMBERS_OFFSET;
-            NSArray<NSString *> *linkedPhones = account.linkedPhoneNumbers;
-            if (row < linkedPhones.count)
-            {
-                address = linkedPhones[row];
-                NSString *e164 = [NSString stringWithFormat:@"+%@", address];
-                NBPhoneNumber *phoneNb = [[NBPhoneNumberUtil sharedInstance] parse:e164 defaultRegion:nil error:nil];
-                NSString *phoneNumber = [[NBPhoneNumberUtil sharedInstance] format:phoneNb numberFormat:NBEPhoneNumberFormatINTERNATIONAL error:nil];
-                
-                promptMsg = [VectorL10n settingsRemovePhonePromptMsg:phoneNumber];
             }
         }
         
