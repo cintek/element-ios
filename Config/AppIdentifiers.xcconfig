@@ -16,7 +16,7 @@
 
 
 // App identity
-BUNDLE_DISPLAY_NAME = Element
+BUNDLE_DISPLAY_NAME = FEZ Chat
 BASE_BUNDLE_IDENTIFIER = de.intevation.fez
 APPLICATION_GROUP_IDENTIFIER = group.de.intevation.fez
 APPLICATION_SCHEME = element
