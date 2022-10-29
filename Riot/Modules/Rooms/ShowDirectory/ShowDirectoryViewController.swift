@@ -293,28 +293,7 @@ extension ShowDirectoryViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let sectionHeaderView: UIView?
-        
-        let directorySection = self.sections[section]
-        
-        switch directorySection {
-        case .searchInput:
-            sectionHeaderView = nil
-        case .publicRoomsDirectory(let viewModel):
-            guard let view: DirectoryNetworkTableHeaderFooterView = tableView.dequeueReusableHeaderFooterView() else {
-                return nil
-            }
-            if let name = viewModel.directoryServerDisplayname {
-                let title = VectorL10n.searchableDirectoryXNetwork(name)
-                view.configure(withViewModel: DirectoryNetworkVM(title: title))
-            }
-            view.update(theme: self.theme)
-            view.delegate = self
-            sectionHeaderView = view
-        }
-        
-        return sectionHeaderView
+        return nil
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
