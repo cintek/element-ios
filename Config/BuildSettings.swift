@@ -226,7 +226,7 @@ final class BuildSettings: NSObject {
     
     static let allowSendingStickers: Bool = true
     
-    static let allowLocalContactsAccess: Bool = true
+    static let allowLocalContactsAccess: Bool = false
     
     static let allowInviteExernalUsers: Bool = true
     
@@ -271,19 +271,19 @@ final class BuildSettings: NSObject {
     static let settingsScreenAllowAddingEmailThreepids: Bool = true
     static let settingsScreenAllowAddingPhoneThreepids: Bool = true
     static let settingsScreenShowThreepidExplanatory: Bool = true
-    static let settingsScreenShowDiscoverySettings: Bool = true
-    static let settingsScreenAllowIdentityServerConfig: Bool = true
+    static let settingsScreenShowDiscoverySettings: Bool = false
+    static let settingsScreenAllowIdentityServerConfig: Bool = false
     static let settingsScreenShowConfirmMediaSize: Bool = true
     static let settingsScreenShowAdvancedSettings: Bool = true
     static let settingsScreenShowLabSettings: Bool = true
-    static let settingsScreenAllowChangingRageshakeSettings: Bool = true
+    static let settingsScreenAllowChangingRageshakeSettings: Bool = false
     static let settingsScreenAllowChangingCrashUsageDataSettings: Bool = true
-    static let settingsScreenAllowBugReportingManually: Bool = true
+    static let settingsScreenAllowBugReportingManually: Bool = false
     static let settingsScreenAllowDeactivatingAccount: Bool = true
     static let settingsScreenShowChangePassword:Bool = true
-    static let settingsScreenShowEnableStunServerFallback: Bool = true
+    static let settingsScreenShowEnableStunServerFallback: Bool = false
     static let settingsScreenShowNotificationDecodedContentOption: Bool = true
-    static let settingsScreenShowNsfwRoomsOption: Bool = true
+    static let settingsScreenShowNsfwRoomsOption: Bool = false
     static let settingsSecurityScreenShowSessions:Bool = true
     static let settingsSecurityScreenShowSetupBackup:Bool = true
     static let settingsSecurityScreenShowRestoreBackup:Bool = true
@@ -310,16 +310,16 @@ final class BuildSettings: NSObject {
     
     // MARK: - Room Screen
     
-    static let roomScreenAllowVoIPForDirectRoom: Bool = true
-    static let roomScreenAllowVoIPForNonDirectRoom: Bool = true
-    static let roomScreenAllowCameraAction: Bool = true
+    static let roomScreenAllowVoIPForDirectRoom: Bool = false
+    static let roomScreenAllowVoIPForNonDirectRoom: Bool = false
+    static let roomScreenAllowCameraAction: Bool = false
     static let roomScreenAllowMediaLibraryAction: Bool = true
     static let roomScreenAllowStickerAction: Bool = true
     static let roomScreenAllowFilesAction: Bool = true
     
     // Timeline style
     static let roomScreenAllowTimelineStyleConfiguration: Bool = true
-    static let roomScreenTimelineDefaultStyleIdentifier: RoomTimelineStyleIdentifier = .plain
+    static let roomScreenTimelineDefaultStyleIdentifier: RoomTimelineStyleIdentifier = .bubble //default: .plain
     static var isRoomScreenEnableMessageBubblesByDefault: Bool {
         return self.roomScreenTimelineDefaultStyleIdentifier == .bubble
     }
@@ -344,8 +344,8 @@ final class BuildSettings: NSObject {
     static let roomSettingsScreenShowDirectChatOption: Bool = true
     static let roomSettingsScreenAllowChangingAccessSettings: Bool = true
     static let roomSettingsScreenAllowChangingHistorySettings: Bool = true
-    static let roomSettingsScreenShowAddressSettings: Bool = true
-    static let roomSettingsScreenShowAdvancedSettings: Bool = true
+    static let roomSettingsScreenShowAddressSettings: Bool = false
+    static let roomSettingsScreenShowAdvancedSettings: Bool = false
     static let roomSettingsScreenAdvancedShowEncryptToVerifiedOption: Bool = true
 
     // MARK: - Room Member Screen
@@ -371,16 +371,16 @@ final class BuildSettings: NSObject {
     
     // MARK: - Authentication Screen
     static let authScreenShowRegister = true
-    static let authScreenShowPhoneNumber = true
+    static let authScreenShowPhoneNumber = false
     static let authScreenShowForgotPassword = true
     static let authScreenShowCustomServerOptions = true
-    static let authScreenShowSocialLoginSection = true
+    static let authScreenShowSocialLoginSection = false
     
     // MARK: - Authentication Options
     static let authEnableRefreshTokens = false
     
     // MARK: - Onboarding
-    static let onboardingShowAccountPersonalization = true
+    static let onboardingShowAccountPersonalization = false
     static let onboardingEnableNewAuthenticationFlow = true
     
     // MARK: - Unified Search
