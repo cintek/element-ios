@@ -97,9 +97,4 @@ extension ShowDirectoryCoordinator: ShowDirectoryViewModelCoordinatorDelegate {
     func showDirectoryViewModelDidCancel(_ viewModel: ShowDirectoryViewModelType) {
         self.delegate?.showDirectoryCoordinatorDidCancel(self)
     }
-    
-    func showDirectoryViewModelWantsToShowDirectoryServerPicker(_ viewModel: ShowDirectoryViewModelType) {
-        let controller = self.createDirectoryServerPickerViewController()
-        self.delegate?.showDirectoryCoordinatorWantsToShow(self, viewController: controller)
-    }
 }

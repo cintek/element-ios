@@ -27,7 +27,6 @@ protocol ShowDirectoryViewModelCoordinatorDelegate: AnyObject {
     func showDirectoryViewModel(_ viewModel: ShowDirectoryViewModelType, didSelectRoomWithIdOrAlias roomIdOrAlias: String)
     func showDirectoryViewModelDidTapCreateNewRoom(_ viewModel: ShowDirectoryViewModelType)
     func showDirectoryViewModelDidCancel(_ viewModel: ShowDirectoryViewModelType)
-    func showDirectoryViewModelWantsToShowDirectoryServerPicker(_ viewModel: ShowDirectoryViewModelType)
 }
 
 /// Protocol describing the view model used by `ShowDirectoryViewController`

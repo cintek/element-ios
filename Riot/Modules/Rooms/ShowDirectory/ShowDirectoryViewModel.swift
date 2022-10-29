@@ -103,8 +103,6 @@ final class ShowDirectoryViewModel: NSObject, ShowDirectoryViewModelType {
             self.search(with: pattern)
         case .createNewRoom:
             self.coordinatorDelegate?.showDirectoryViewModelDidTapCreateNewRoom(self)
-        case .switchServer:
-            self.switchServer()
         case .cancel:
             self.cancelOperations()
             self.coordinatorDelegate?.showDirectoryViewModelDidCancel(self)
@@ -152,10 +150,6 @@ final class ShowDirectoryViewModel: NSObject, ShowDirectoryViewModelType {
     private func resetSections() {
         self.lastSearchInputViewData = nil
         self.updateSectionsIfNeeded()
-    }
-    
-    private func switchServer() {
-        self.coordinatorDelegate?.showDirectoryViewModelWantsToShowDirectoryServerPicker(self)
     }
     
     private func joinRoom(withRoomIdOrAlias roomIdOrAlias: String) {

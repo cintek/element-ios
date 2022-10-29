@@ -25,6 +25,5 @@ enum ShowDirectoryViewAction {
     case joinRoom(_ indexPath: IndexPath)
     case search(_ pattern: String?)
     case createNewRoom
-    case switchServer
     case cancel
 }

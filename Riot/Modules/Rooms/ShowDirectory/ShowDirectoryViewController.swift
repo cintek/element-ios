@@ -169,7 +169,6 @@ final class ShowDirectoryViewController: UIViewController {
     
     private func setupViews() {
         self.mainTableView.keyboardDismissMode = .interactive
-        self.mainTableView.register(headerFooterViewType: DirectoryNetworkTableHeaderFooterView.self)
         self.mainTableView.register(cellType: DirectoryRoomTableViewCell.self)
         self.mainTableView.rowHeight = 76
         self.mainTableView.tableFooterView = tableFooterView
@@ -359,17 +358,6 @@ extension ShowDirectoryViewController: DirectoryRoomTableViewCellDelegate {
     }
     
 }
-
-// MARK: - DirectoryNetworkTableHeaderFooterViewDelegate
-
-extension ShowDirectoryViewController: DirectoryNetworkTableHeaderFooterViewDelegate {
-    
-    func directoryNetworkTableHeaderFooterViewDidTapSwitch(_ view: DirectoryNetworkTableHeaderFooterView) {
-        viewModel.process(viewAction: .switchServer)
-    }
-    
-}
-
 
 // MARK: - ShowDirectoryViewModelViewDelegate
 extension ShowDirectoryViewController: ShowDirectoryViewModelViewDelegate {
