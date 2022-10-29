@@ -118,17 +118,7 @@ struct SpaceCreationSettings: View {
                         })
                         .id("topicTextEditor")
                         .padding(.horizontal, 2)
-                        .padding(.bottom, viewModel.viewState.showRoomAddress ? 20 : 3)
-                        if viewModel.viewState.showRoomAddress {
-                            RoundedBorderTextField(title: VectorL10n.spacesCreationAddress, placeHolder: "# \(viewModel.viewState.defaultAddress)", text: $viewModel.address, footerText: viewModel.viewState.addressMessage, isError: !viewModel.viewState.isAddressValid, configuration: UIKitTextInputConfiguration(keyboardType: .URL, returnKeyType: .done, autocapitalizationType: .none), onTextChanged: {
-                                newText in
-                                viewModel.send(viewAction: .addressChanged(newText))
-                            })
-                            .id("addressTextField")
-                            .accessibility(identifier: "addressTextField")
-                            .padding(.horizontal, 2)
-                            .padding(.bottom, 3)
-                        }
+                        .padding(.bottom, 3)
                         Spacer()
                     }
                     .animation(.easeOut(duration: 0.2))
