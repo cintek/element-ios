@@ -1398,12 +1398,9 @@ ChangePasswordCoordinatorBridgePresenterDelegate>
  
     NSString *loggedUserInfo = [VectorL10n settingsConfigUserId:account.mxCredentials.userId];
     
-    NSString *homeserverInfo = [VectorL10n settingsConfigHomeServer:account.mxCredentials.homeServer];       
-    
     NSString *sdkVersionInfo = [NSString stringWithFormat:@"Matrix SDK %@", MatrixSDKVersion];
     
     [footerText appendFormat:@"%@\n", loggedUserInfo];
-    [footerText appendFormat:@"%@\n", homeserverInfo];
     [footerText appendFormat:@"%@\n", appVersionInfo];
     [footerText appendFormat:@"%@\n", sdkVersionInfo];
     [footerText appendFormat:@"%@", self.mainSession.crypto.version];
