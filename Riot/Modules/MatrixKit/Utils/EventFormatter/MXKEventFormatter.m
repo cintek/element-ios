@@ -504,6 +504,9 @@ static NSString *const kHTMLATagRegexPattern = @"<a href=(?:'|\")(.*?)(?:'|\")>(
             // Check whether the sender has updated his profile
             if (event.isUserProfileChange)
             {
+                //don't show profile changes
+                return nil;
+
                 // Is redacted event?
                 if (isRedacted)
                 {
