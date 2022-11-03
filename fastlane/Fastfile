@@ -34,6 +34,8 @@ platform :ios do
       options = { build_number: build_number }.merge(options)
     end
     build_release(options)
+
+    upload_to_diawi
   end
 
   desc "Builds an ipa for the App Store"
@@ -257,8 +259,10 @@ platform :ios do
     xcodegen(spec: "project.yml")
     
     # Clear derived data
-    clear_derived_data(derived_data_path: ENV["DERIVED_DATA_PATH"])
-    
+    if !adhoc
+      clear_derived_data(derived_data_path: ENV["DERIVED_DATA_PATH"])
+    end
+
     # Setup project provisioning profiles
     download_provisioning_profiles(adhoc: adhoc)
     disable_automatic_code_signing
@@ -287,7 +291,7 @@ platform :ios do
 
     # Build app and create ipa
     build_app(
-      clean: true,
+      clean: !adhoc,
       scheme: ENV["SCHEME"],
       xcargs: xcargs,
       export_method: export_method,
