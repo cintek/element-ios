@@ -548,7 +548,7 @@
         if (indexPath.row < filteredLocalContacts.count)
         {
             contact = filteredLocalContacts[indexPath.row];
-            showMatrixIdInDisplayName = YES;
+            //showMatrixIdInDisplayName = YES;
         }
     }
     else if (indexPath.section == filteredMatrixContactsSection)
@@ -557,7 +557,7 @@
         {
             contact = filteredMatrixContacts[indexPath.row];
             
-            showMatrixIdInDisplayName = self.forceMatrixIdInDisplayName ? YES : [isMultiUseNameByDisplayName[contact.displayName] isEqualToNumber:@(YES)];
+            //showMatrixIdInDisplayName = self.forceMatrixIdInDisplayName ? YES : [isMultiUseNameByDisplayName[contact.displayName] isEqualToNumber:@(YES)];
         }
     }
     
