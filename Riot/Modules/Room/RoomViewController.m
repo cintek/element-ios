@@ -1215,7 +1215,9 @@ static CGSize kThreadListBarButtonItemImageSize;
         
         if ([self.inputToolbarView.class conformsToProtocol:@protocol(RoomInputToolbarViewProtocol)]) {
             id<RoomInputToolbarViewProtocol> inputToolbar = (id<RoomInputToolbarViewProtocol>)self.inputToolbarView;
-            [inputToolbar setVoiceMessageToolbarView:self.voiceMessageController.voiceMessageToolbarView];
+	    if (RiotSettings.shared.roomScreenAllowVoiceMessages) {
+		[inputToolbar setVoiceMessageToolbarView:self.voiceMessageController.voiceMessageToolbarView];
+	    }
         }
         
         [self updateInputToolBarViewHeight];

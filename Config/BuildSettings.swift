@@ -315,6 +315,7 @@ final class BuildSettings: NSObject {
     static let roomScreenAllowCameraAction: Bool = false
     static let roomScreenAllowMediaLibraryAction: Bool = true
     static let roomScreenAllowStickerAction: Bool = true
+    static let roomScreenAllowVoiceMessages: Bool = false
     static let roomScreenAllowFilesAction: Bool = true
     
     // Timeline style

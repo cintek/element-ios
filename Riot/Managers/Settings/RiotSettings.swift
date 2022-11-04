@@ -225,6 +225,9 @@ final class RiotSettings: NSObject {
     
     @UserDefault(key: "roomScreenAllowStickerAction", defaultValue: BuildSettings.roomScreenAllowStickerAction, storage: defaults)
     var roomScreenAllowStickerAction
+
+    @UserDefault(key: "roomScreenAllowVoiceMessages", defaultValue: BuildSettings.roomScreenAllowVoiceMessages, storage: defaults)
+    var roomScreenAllowVoiceMessages
     
     @UserDefault(key: "roomScreenAllowFilesAction", defaultValue: BuildSettings.roomScreenAllowFilesAction, storage: defaults)
     var roomScreenAllowFilesAction
