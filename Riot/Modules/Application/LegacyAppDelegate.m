@@ -2383,22 +2383,6 @@ NSString *const AppDelegateUniversalLinkDidChangeNotification = @"AppDelegateUni
 - (void)showLaunchAnimation
 {
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    
-    if (!launchAnimationContainerView && window)
-    {
-        MXLogDebug(@"[AppDelegate] showLaunchAnimation");
-        
-        LaunchLoadingView *launchLoadingView = [LaunchLoadingView instantiate];
-        launchLoadingView.frame = window.bounds;
-        [launchLoadingView updateWithTheme:ThemeService.shared.theme];
-        launchLoadingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        
-        [window addSubview:launchLoadingView];
-        
-        launchAnimationContainerView = launchLoadingView;
-        
-        [MXSDKOptions.sharedInstance.profiler startMeasuringTaskWithName:MXTaskProfileNameStartupLaunchScreen];
-    }
 }
 
 - (void)hideLaunchAnimation
