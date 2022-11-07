@@ -95,7 +95,7 @@ final class LegacyAuthenticationCoordinator: NSObject, AuthenticationCoordinator
     func presentPendingScreensIfNecessary() {
         canPresentAdditionalScreens = true
         
-        showLoadingAnimation()
+        //showLoadingAnimation()
         
         if isWaitingToPresentCompleteSecurity {
             isWaitingToPresentCompleteSecurity = false
@@ -172,9 +172,9 @@ extension LegacyAuthenticationCoordinator: AuthenticationViewControllerDelegate 
         
         self.session = session
         
-        if canPresentAdditionalScreens {
-            showLoadingAnimation()
-        }
+        //if canPresentAdditionalScreens {
+        //    showLoadingAnimation()
+        //}
         
         let verificationListener = SessionVerificationListener(session: session, password: password)
         verificationListener.completion = { [weak self] result in

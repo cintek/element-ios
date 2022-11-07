@@ -103,7 +103,7 @@ final class AuthenticationCoordinator: NSObject, AuthenticationCoordinatorProtoc
     func presentPendingScreensIfNecessary() {
         canPresentAdditionalScreens = true
         
-        showLoadingAnimation()
+        //showLoadingAnimation()
         
         if isWaitingToPresentCompleteSecurity {
             isWaitingToPresentCompleteSecurity = false
@@ -534,9 +534,9 @@ final class AuthenticationCoordinator: NSObject, AuthenticationCoordinatorProtoc
             return
         }
         
-        if canPresentAdditionalScreens {
-            showLoadingAnimation()
-        }
+        //if canPresentAdditionalScreens {
+        //    showLoadingAnimation()
+        //}
         
         let verificationListener = SessionVerificationListener(session: session, password: password)
         
