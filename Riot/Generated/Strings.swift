@@ -735,7 +735,7 @@ public class VectorL10n: NSObject {
   public static var authenticationLoginTitle: String { 
     return VectorL10n.tr("Vector", "authentication_login_title") 
   }
-  /// Username / Email / Phone
+  /// Username / Email
   public static var authenticationLoginUsername: String { 
     return VectorL10n.tr("Vector", "authentication_login_username") 
   }
@@ -7743,7 +7743,7 @@ public class VectorL10n: NSObject {
   public static var settingsThirdPartyNotices: String { 
     return VectorL10n.tr("Vector", "settings_third_party_notices") 
   }
-  /// Manage which email addresses or phone numbers you can use to log in or recover your account here. Control who can find you in 
+  /// Manage which email addresses you can use to log in or recover your account here. Control who can find you in 
   public static var settingsThreePidsManagementInformationPart1: String { 
     return VectorL10n.tr("Vector", "settings_three_pids_management_information_part1") 
   }
