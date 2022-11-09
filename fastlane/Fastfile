@@ -33,6 +33,7 @@ platform :ios do
       build_number = generate_build_number()
       options = { build_number: build_number }.merge(options)
     end
+
     build_release(options)
 
     upload_to_diawi
@@ -53,8 +54,6 @@ platform :ios do
 
   desc "Builds an Alpha ipa for pull request branches"
   lane :alpha do
-    authentificate_app_store_connect
-
     # Check we have all the tokens and tools necessary
     UI.user_error!("'DIAWI_API_TOKEN' environment variable should be set to use this lane") unless !ENV["DIAWI_API_TOKEN"].to_s.empty?
             
@@ -262,6 +261,9 @@ platform :ios do
     if !adhoc
       clear_derived_data(derived_data_path: ENV["DERIVED_DATA_PATH"])
     end
+
+    # Authenticate at App Store Connect with Token to be able to download provisioning profiles
+    authentificate_app_store_connect
 
     # Setup project provisioning profiles
     download_provisioning_profiles(adhoc: adhoc)
@@ -482,8 +484,7 @@ platform :ios do
     api_key = app_store_connect_api_key(
       issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
       key_id: ENV["APP_STORE_CONNECT_API_KEY_KEY_ID"],
-      key_filepath: "appstorekey.p12",
-      is_key_content_base64: true,
+      key_filepath: "provisioning_profiles/App_Store_Connect_Key.p8",
       duration: 1200
     )
   end
